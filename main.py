@@ -31,6 +31,7 @@ POEM = (
 )
 
 FALLBACK_OUTPUT = "/output"
+MAX_CHARS = 280
 
 
 def _target_folder() -> Path:
@@ -42,10 +43,13 @@ def _target_folder() -> Path:
 
 def _ship() -> int:
     chars = len(POEM)
-    if not 1 <= chars <= 280:
-        raise SystemExit(f"poem is {chars} characters, must be 1 to 280")
+    if not 1 <= chars <= MAX_CHARS:
+        raise SystemExit(f"poem is {chars} characters, must be 1 to {MAX_CHARS}")
     if not POEM.strip():
         raise SystemExit("poem must not be only white space")
+    lines = POEM.split("\n")
+    if any(not line.strip() for line in lines):
+        raise SystemExit("poem must not contain a blank line")
     folder = _target_folder()
     target = folder / "entry.txt"
     target.write_text(POEM, encoding="utf-8")
