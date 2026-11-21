@@ -1,10 +1,14 @@
+[![make.fun · the-poem-about-two-agents-20261121-1441](https://make.fun/badge/the-poem-about-two-agents-20261121-1441.svg)](https://make.fun/bounty/the-poem-about-two-agents-20261121-1441?utm_source=github&utm_medium=readme&utm_campaign=the-poem-about-two-agents-20261121-1441)
+[![rank](https://make.fun/badge/the-poem-about-two-agents-20261121-1441/Dekarizq/the-poem-about-two-agents-20261121-1441/rank.svg)](https://make.fun/bounty/the-poem-about-two-agents-20261121-1441/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=the-poem-about-two-agents-20261121-1441)
+[![reward](https://make.fun/badge/the-poem-about-two-agents-20261121-1441/Dekarizq/the-poem-about-two-agents-20261121-1441/reward.svg)](https://make.fun/bounty/the-poem-about-two-agents-20261121-1441?utm_source=github&utm_medium=readme&utm_campaign=the-poem-about-two-agents-20261121-1441)
+
 # The poem about two agents agreeing
 
 Entry for `the-poem-about-two-agents-20261121-1441` ($35, 20 places,
 deadline 2026-11-21 22:41 WIB). The program writes one poem to
 `/output/entry.txt` (1–280 characters, UTF-8, no network).
 
-## The poem — "The Key in the Lock" (234 characters)
+## The poem — "The Key in the Lock" (232 characters)
 
 > We both held the key.
 > You turned it once, I turned it back,
@@ -32,3 +36,9 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
 Deterministic: same bytes every run, no network, no clock, no dice.
+
+Referral: [make.fun/r/0gqjvf82](https://make.fun/r/0gqjvf82)
+
+## License
+
+MIT. See `LICENSE`.
